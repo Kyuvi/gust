@@ -26,7 +26,7 @@ This is not a Clojure clone nor is it trying to be, for something closer to that
 ** Goals
 + Fast startup - Keep Guile's near instant start up
 + Full Guile compatibility
-+ Ease of installation - the main functions can be imported from (gust gust) or from the individual modules as needed. It should always be just a folder (or two) of scheme code to add to Guile's '%load-path' without any complex procedures.
++ Ease of installation - the main functions can be imported from (gust gust) or from the individual modules as needed. It should always be just a folder (or two) of scheme code to add to Guile's '%load-path' without needing any complex procedures.
 + Simplicity
 + Intuitive
 + Brevity
@@ -61,6 +61,7 @@ Please use, <My username> at gmx dot com
 
 * License
 Copyright © 2025 Kyuvi
+
 This program is published under version 3 of the GNU General Public license.
 
 This program is free software: you can redistribute it and/or modify

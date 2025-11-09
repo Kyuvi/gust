@@ -35,8 +35,8 @@
 (cond-expand
  (guile-2 (def alen array-length))
  (guile (def (array-length a)
-          "(alen a)
-           Return the length of an array: its first dimension."
+          "(array-length a)
+           Return the length of an array, i.e. its first dimension."
           (length (if (zero? (array-rank a))
                       (error "array-length: expecting a non-zero rank")
                       (array->list a))))
