@@ -41,7 +41,6 @@ This is not a Clojure clone nor is it trying to be, for something closer to that
 + ns - an improved Clojure like modules system (swapping :require with :use and mapped unto the underlying define-module system, maybe adding module documentation) for the language above .
 + "Namespace isolated"/"qualified symbols" macro definition facility (similar to Clojure's)
 
-
 Pull requests are welcome.
 
 * Donations
@@ -62,6 +61,7 @@ Please use, <My username> at gmx dot com
 
 * License
 Copyright © 2025 Kyuvi
+This program is published under version 3 of the GNU General Public license.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
