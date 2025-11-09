@@ -4,11 +4,11 @@
 ;; Gust procedures and aliases found in guile-2+ but not found in guile-1 or
 ;; any modules, that are useful and can easily be implemented in guile-1
 
-(define-module (gust wan))
+(define-module (gust one))
 
 (cond-expand
  (guile-2
-  (display "\nNOTE: All procedures in (gust wan) are available from guile-2.\n"))
+  (display "\nNOTE: All procedures in (gust one) are available from guile-2.\n"))
 
  (guile
 
