@@ -8,9 +8,9 @@ A set of Guile Scheme modules to increase speed and efficiency when writing code
 
 * Motivation
 
-[[https://www.gnu.org/software/guile/][Guile]] is a powerful [[https://en.wikipedia.org/wiki/Scheme_(programming_language)][Scheme]] variant that is very well integrated with the GNU/Linux ecosystem. That said Scheme, to my understanding, was designed in the 70's to prove a set of particular (academic) points and understand certain aspects of programming, which is did very well as can be seen from the persistence and the adoption of many of its ideas in other places.
+[[https://www.gnu.org/software/guile/][Guile]] is a powerful [[https://en.wikipedia.org/wiki/Scheme_(programming_language)][Scheme]] variant that is very well integrated with the GNU/Linux ecosystem. That said Scheme, to my understanding, was designed in the 70's to prove a set of particular (academic) points and understand certain aspects of programming, which it did very well as can be seen from the persistence and the adoption of many of its ideas in other places.
 
-I use Guile mainly for Linux based programming, in most other settings, I use [[https://clojure.org/][Clojure]] or [[https://clojurescript.org/][a]] [[https://github.com/Tensegritics/ClojureDart][variant]], which in my view has a more practical design for getting things done quickly. Gust is an attempt to bring that practical design philosophy to Guile (cf. Paul Graham's [[https://www.paulgraham.com/popular.html][Being popular]] and [[https://www.paulgraham.com/langdes.html][5 questions about language design]]) in a simple way, and ease my switching back and forth, without compromising on Guile's positive attributes.
+I use Guile mainly for Linux based programming, in most other settings, I use [[https://clojure.org/][Clojure]] or [[https://clojurescript.org/][a]] [[https://github.com/Tensegritics/ClojureDart][variant]], which in my view has a more practical design for getting things done quickly. Gust is an attempt to bring that practical design philosophy to Guile (cf. Paul Graham's [[https://www.paulgraham.com/popular.html][Being popular]] and [[https://www.paulgraham.com/langdes.html][5 questions about language design]]) in a simple way, and ease my switching back and forth, without compromising on Guile's powerful attributes.
 
 This is not a Clojure clone nor is it trying to be, for something closer to that on Guile, see [[https://github.com/lokke-org/lokke][Lokke]].
 
@@ -34,12 +34,12 @@ This is not a Clojure clone nor is it trying to be, for something closer to that
 ** Non-goals
 + Clojure compatibility
 
-** TODO
+** Todo
 + defc - define + case-lambda(+ *) (similar to defn in Clojure)
 + letv - a sequential destructuring let (i.e let* with destructuring built in, similar to that of Clojure)
 + Language on Guile - This is a goal as long as it is possible to still use modules written in Guile from Gust and vice versa and it remains "just a couple of folders" on the '%load-path'.
 + ns - an improved Clojure like modules system (swapping :require with :use and mapped unto the underlying define-module system, maybe adding module documentation) for the language above .
-+ "Namespace isolated"/"qualified symbols" macro definition facility (similar to Clojure's)
++ A "Namespace isolated"/"qualified symbols" macro definition facility (similar to Clojure's)
 
 Pull requests are welcome.
 
