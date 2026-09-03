@@ -45,11 +45,17 @@
        #:optional, #:key, or #:rest in 'params' triggers the use of lambda*."
       (syntax-case stx ()
         ((fn params body ...)
-         (let ((params-datum (syntax->datum (syntax params))))
+         (let* ((params-stx (syntax params))
+                (params-datum (syntax->datum params-stx)))
            (if (null? (lambda-keys params-datum))
                (syntax (lambda params body ...))
-               (begin (replace-optn! params-datum)
-                      (syntax (lambda* params body ...)))))))))
+               (begin
+                 (replace-optn! params-datum)
+                 ;; rebuild a syntax object from the mutated datum, preserving context
+                 (let ((new-params-stx (datum->syntax params-stx params-datum)))
+                   ;; inject the new syntax object into the template
+                   (with-syntax ((new-params new-params-stx))
+                     (syntax (lambda* new-params body ...)))))))))))
 
  (export (fn . prc))
 
